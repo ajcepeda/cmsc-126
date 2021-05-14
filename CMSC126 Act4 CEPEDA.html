@@ -1,0 +1,52 @@
+<!-- CEPEDA, Althea Jane 		2020-08554 -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Philippine Tax Income Computation </title>
+	<link rel="stylesheet" href="cepedastyle.css">
+</head>
+
+<body>
+
+	<div class="box">
+		<h2><b> PHILIPPINE INCOME TAX COMPUTATION </b></h2>
+
+		<p> Monthly Income: </p>
+		<input type="text" name="monthly-income" id="monthly-income" required>
+		<br>
+
+		<p> Number of Dependents: </p>
+		<input type="text" name="num-dependents" id="num-dependents" required>
+		<br>
+
+		<p> Government Worker? </p>
+
+		<p>
+		<label>
+			<input type="radio" name="choice-radio" id="yes" value="govworker">
+		    Yes
+		</label>
+		<label>
+		    <input type="radio" name="choice-radio" id="no" value="nongovworker">
+		    No
+		</label>
+		</p>
+		
+		<br>
+
+		<button type="button" onclick="payabletax()"> Calculate </button>
+
+		<br>
+
+		<h1 id="finalResult"> </h1>
+	</div>
+
+<script src = "cepedaJS.js"> </script>
+
+</body>
+</html>
+
